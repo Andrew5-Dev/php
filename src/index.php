@@ -15,7 +15,7 @@ var_dump($float == $int);
 var_dump($float !== $int);
 var_dump($string !== $string2);
 var_dump($string == $string2);
-var_dump($null === $null2);
+var_dump($null == $null2);
 
 $string2 = (int)"55";
 
