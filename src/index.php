@@ -1,15 +1,23 @@
 <?php
 
-echo "What is your name?\n";
-$name = trim(fgets(STDIN));
+$null = null;
+$null2 = null;
+$bool = True;
+$string = "MAX";
+$string2 = "5";
+$int =  5;
+$float = 10.5;
 
-echo "Hello, $name!\nI am good to meet you!\n";
+var_dump($null == $float);
+var_dump($string == $int);
+var_dump($string == $null);
+var_dump($float == $int);
+var_dump($float !== $int);
+var_dump($string !== $string2);
+var_dump($string == $string2);
+var_dump($null == $null2);
 
-echo "Enter Number 1\n";
-$number1 = (int)fgets(STDIN);
+$string2 = (int)"55";
 
-echo "Enter Number 2\n";
-$number2 = (int)fgets(STDIN);
-
-echo "Sum = " . ($number1 + $number2) . "\n";
-echo "Average Arithmetic = " . ($number1 + $number2) / 2 . "\n";
+var_dump($int != $string2);
+var_dump($int === $string2);
