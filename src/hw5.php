@@ -13,11 +13,11 @@ echo "Area of Circle is $result" . PHP_EOL;
 
 
 echo "Enter number 1 " . PHP_EOL;
-$number1 = (int)fgets(STDIN);
+$number1 = (float)fgets(STDIN);
 echo "Enter number 2" . PHP_EOL;
-$number2 = (int)fgets(STDIN);
+$number2 = (float)fgets(STDIN);
 
-function exponentiation (int $number1, int $number2): int
+function exponentiation (float $number1, float $number2): float
 {
     return  $number1 ** $number2;
 }
@@ -26,16 +26,13 @@ $exponentNumber = exponentiation($number1, $number2);
 echo "Exponentiation is $exponentNumber" . PHP_EOL;
 
 
-
-
-echo "Enter number 3 " . PHP_EOL;
-$number3 = (int)fgets(STDIN);
-
-
-function exponentiation2 (int $exponentNumber, int $number3): int
+function exponentiation2 (float &$exponentNumber): void
 {
-    return  $exponentNumber ** $number3;
+    $exponentNumber =  $exponentNumber ** 2;
 }
 
-$exponentNumber = exponentiation2($exponentNumber, $number3);
-echo "Exponentiation is $exponentNumber" . PHP_EOL;
+echo "Enter number 3" . PHP_EOL;
+$number3 = (float)fgets(STDIN);
+
+exponentiation2($number3);
+echo "Exponentiation is $number3" . PHP_EOL;
