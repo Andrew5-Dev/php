@@ -1,12 +1,12 @@
 <?php
 
 echo "Enter number 1 " . PHP_EOL;
-$number1 = (int)fgets(STDIN);
+$number1 = (float)fgets(STDIN);
 echo "Enter number 2" . PHP_EOL;
-$number2 = (int)fgets(STDIN);
+$number2 = (float)fgets(STDIN);
 
 
-function multiplication (int &$number1, int $number2, ?Closure $closure = null)
+function multiplication (float $number1, float $number2, ?Closure $closure = null): mixed
 {
     $number1 = $number1 * $number2;
     if ($closure !== null) {
@@ -15,7 +15,8 @@ function multiplication (int &$number1, int $number2, ?Closure $closure = null)
         return $number1;
 }
 
-$closure = function ($number1)  {
+$closure = function (float $number1)
+{
     echo "Closure is $number1" . PHP_EOL;
 };
 
