@@ -6,11 +6,11 @@ echo "Enter number 2" . PHP_EOL;
 $number2 = (float)fgets(STDIN);
 
 
-function multiplication (float $number1, float $number2, ?Closure $closure = null): mixed
+function multiplication (float $number1, float $number2, ?Closure $closure = null): float
 {
     $number1 = $number1 * $number2;
     if ($closure !== null) {
-        return $closure($number1);
+        $closure($number1);
     }
         return $number1;
 }
