@@ -17,11 +17,5 @@ function arguments($file = 'db.txt'): array|false
     if (file_exists('../' . $file)) {
         return false;
     }
-
-    $arguments = file($file);
-    array_walk($arguments, function (&$arguments) {
-        $arguments = json_decode($arguments, true);
-    });
-
-    return $arguments;
+    return file($file);
 }
