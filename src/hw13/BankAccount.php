@@ -1,6 +1,7 @@
 <?php
 
 namespace hw13;
+
 use Exception;
 
 class BankAccount
@@ -10,34 +11,65 @@ class BankAccount
 
     public function __construct(int $accountNumber, float $balance)
     {
-        $this->accountNumber = $accountNumber;
-        $this->balance = $balance;
-    }
-
-    public function getAccountNumber() : int
-    {
-        return $this->accountNumber;
-    }
-
-    public function getBalance() : float
-    {
-        return $this->balance;
-    }
-
-    public function deposit(float $amount): void
-    {
-        $this->balance += $amount;
+        $this->setAccountNumber($accountNumber);
+        $this->setBalance($balance);
     }
 
     /**
      * @throws Exception
      */
-    public function withdraw(float $amount) : float
+    public function setAccountNumber(int $accountNumber): void
     {
+        if ($accountNumber < 0) {
+            throw new Exception("Номер рахунку має бути більше 0!");
+        }
+        $this->accountNumber = $accountNumber;
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function setBalance(float $balance): void
+    {
+        if ($balance < 0) {
+            throw new Exception("Баланс має бути більше 0!");
+        }
+        $this->balance = $balance;
+    }
+
+    public function getAccountNumber(): int
+    {
+        return $this->accountNumber;
+    }
+
+    public function getBalance(): float
+    {
+        return $this->balance;
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function deposit(float $amount): float
+    {
+        if ($amount < 0) {
+            throw new Exception("Сума поповнення має бути більше 0!");
+        }
+        return $this->balance += $amount;
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function withdraw(float $amount): float
+    {
+        if ($amount < 0) {
+            throw new Exception("Сума зняття має бути більше 0!");
+        }
         if ($this->balance >= $amount) {
             $this->balance -= $amount;
         } else {
-           return  throw new Exception("На балансі аккаунту не достатньо коштів!");
+            return throw new Exception("На балансі аккаунту не достатньо коштів!");
         }
         return $this->balance;
     }
