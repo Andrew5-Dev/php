@@ -9,7 +9,7 @@ class Rectangle extends Figure
     private float $length;
     private float $width;
 
-    public function __construct($length, $width) {
+    public function __construct(float $length, float $width) {
 
         $this->setLength($length);
         $this->setWidth($width);
