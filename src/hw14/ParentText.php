@@ -6,8 +6,7 @@ use Exception;
 
 class ParentText
 {
-    private string $text;
-
+    protected string $text;
 
     public function __construct(string $text)
     {

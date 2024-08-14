@@ -2,9 +2,7 @@
 
 namespace hw14;
 
-use AllowDynamicProperties;
-
-#[AllowDynamicProperties] class Text extends ParentText
+class Text extends ParentText
 {
 
     public function print(): void
