@@ -36,6 +36,8 @@ $rectangle->showPerimeter();
 $circle->showArea();
 $circle->showPerimeter();
 
+
+
 /*echo "Площа прямокутника: " . $rectangle->getArea() . PHP_EOL;
 echo "Периметр прямокутника: " . $rectangle->getPerimeter() . PHP_EOL;
 echo "Площа кола: " . $circle->getArea() . PHP_EOL;
