@@ -4,9 +4,9 @@ namespace hw15;
 
 abstract class Figure
 {
-    abstract public function getArea();
-    abstract public function getPerimeter();
-    abstract public function showPerimeter();
-    abstract public function showArea();
+    abstract public function getArea(): float;
+    abstract public function getPerimeter(): float;
+    abstract public function showPerimeter(): void;
+    abstract public function showArea(): void;
 
 }
