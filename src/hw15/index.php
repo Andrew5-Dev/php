@@ -27,10 +27,17 @@ $circle = new Circle($radius);
 }
 $figures = [$rectangle, $circle];
 
+
+
 echo "Довжина прямокутника: " . $length . PHP_EOL;
 echo "Ширина прямокутника: " . $width . PHP_EOL;
-echo "Площа прямокутника: " . $rectangle->getArea() . PHP_EOL;
+$rectangle->showArea();
+$rectangle->showPerimeter();
+$circle->showArea();
+$circle->showPerimeter();
+
+/*echo "Площа прямокутника: " . $rectangle->getArea() . PHP_EOL;
 echo "Периметр прямокутника: " . $rectangle->getPerimeter() . PHP_EOL;
 echo "Площа кола: " . $circle->getArea() . PHP_EOL;
-echo "Периметр кола: " . $circle->getPerimeter() . PHP_EOL;
+echo "Периметр кола: " . $circle->getPerimeter() . PHP_EOL;*/
 

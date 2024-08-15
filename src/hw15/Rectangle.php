@@ -13,8 +13,6 @@ class Rectangle extends Figure
 
         $this->setLength($length);
         $this->setWidth($width);
-        $this->length = $length;
-        $this->width = $width;
     }
 
     /**
@@ -40,11 +38,25 @@ class Rectangle extends Figure
         }
         $this->width = $width;
     }
-    public function getArea() {
+    public function getArea(): float
+    {
         return $this->length * $this->width;
     }
 
-    public function getPerimeter() {
+    public function getPerimeter(): float
+    {
         return 2 * ($this->length + $this->width);
+    }
+
+    public function  showPerimeter(): void
+    {
+
+        echo "Периметр прямокутника: " . $this->getPerimeter() . PHP_EOL;
+
+    }
+
+    public function  showArea(): void
+    {
+        echo "Площа прямокутника: " . $this->getArea() . PHP_EOL;
     }
 }

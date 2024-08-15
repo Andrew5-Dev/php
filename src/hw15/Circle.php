@@ -11,7 +11,6 @@ class Circle extends Figure
     public function __construct(float $radius)
     {
         $this->setRadius($radius);
-        $this->radius = $radius;
     }
 
     /**
@@ -25,14 +24,25 @@ class Circle extends Figure
         }
         $this->radius = $radius;
     }
-    public function getArea()
+
+    public function getArea(): float
     {
         return pi() * pow($this->radius, 2);
     }
 
-    public function getPerimeter()
+    public function getPerimeter() : float
     {
         return 2 * pi() * $this->radius;
+    }
+
+    public function showPerimeter(): void
+    {
+        echo "Периметр кола: " . $this->getPerimeter() . PHP_EOL;
+    }
+
+    public function showArea(): void
+    {
+        echo "Площа кола: " . $this->getArea() . PHP_EOL;
     }
 
 }
