@@ -1,6 +1,6 @@
 <?php
 
-namespace hw13;
+namespace hw\hw13;
 
 use Exception;
 

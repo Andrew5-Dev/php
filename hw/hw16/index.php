@@ -1,8 +1,8 @@
 <?php
 
 
-use hw16\Rectangle;
-use hw16\Square;
+use hw\hw16\Rectangle;
+use hw\hw16\Square;
 
 require_once __DIR__ . '/FigureHelper.php';
 require_once __DIR__ . '/Rectangle.php';

@@ -1,6 +1,6 @@
 <?php
 
-namespace hw14;
+namespace hw\hw14;
 
 class Text extends ParentText
 {

@@ -1,8 +1,7 @@
 <?php
 
-use hw12\Enumeration;
-use hw12\File;
-use hw12\ToDoList;
+use hw\hw12\File;
+use hw\hw12\ToDoList;
 
 require_once __DIR__  . '/File.php';
 require_once __DIR__  . '/FileType.php';

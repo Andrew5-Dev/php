@@ -1,8 +1,8 @@
 <?php
 
-use hw15\Figure;
-use hw15\Rectangle;
-use hw15\Circle;
+use hw\hw15\Circle;
+use hw\hw15\Rectangle;
+
 require_once __DIR__ . '/Figure.php';
 require_once __DIR__ . '/Rectangle.php';
 require_once __DIR__ . '/Circle.php';

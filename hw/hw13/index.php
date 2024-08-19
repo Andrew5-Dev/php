@@ -1,6 +1,6 @@
 <?php
 
-use hw13\BankAccount;
+use hw\hw13\BankAccount;
 
 require_once __DIR__ . '/BankAccount.php';
 try {

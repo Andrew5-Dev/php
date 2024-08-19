@@ -1,8 +1,6 @@
 <?php
 
-namespace hw16;
-
-use Exception;
+namespace hw\hw16;
 
 class Square
 {

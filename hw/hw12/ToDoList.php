@@ -1,10 +1,6 @@
 <?php
 
-namespace hw12;
-
-use hw12\Enumeration;
-use Exception;
-use hw12\File;
+namespace hw\hw12;
 
 class ToDoList
 {

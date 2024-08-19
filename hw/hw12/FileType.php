@@ -1,6 +1,6 @@
 <?php
 
-namespace hw12;
+namespace hw\hw12;
 enum FileType: string
 {
     case TXT = 'txt';

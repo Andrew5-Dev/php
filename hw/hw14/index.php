@@ -1,7 +1,7 @@
 <?php
 
-use hw14\ParentText;
-use hw14\Text;
+use hw\hw14\ParentText;
+use hw\hw14\Text;
 
 require_once __DIR__ . '/ParentText.php';
 require_once __DIR__ . '/Text.php';

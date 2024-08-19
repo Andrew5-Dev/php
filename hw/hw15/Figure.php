@@ -1,6 +1,6 @@
 <?php
 
-namespace hw15;
+namespace hw\hw15;
 
 abstract class Figure
 {

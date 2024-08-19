@@ -1,7 +1,8 @@
 <?php
 
-namespace hw16;
+namespace hw\hw16;
 use Exception;
+
 trait FigureHelper
 {
     public function __construct(float $length, float $width)

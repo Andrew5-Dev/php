@@ -1,6 +1,6 @@
 <?php
 
-namespace hw12;
+namespace hw\hw12;
 
 enum Enumeration: string
 
@@ -10,7 +10,7 @@ enum Enumeration: string
 
     public  function values(): string
     {
-        $cases = self;
+       $cases = self::cases();
         foreach ($cases as $case) {
             $values = $case->value;
         }

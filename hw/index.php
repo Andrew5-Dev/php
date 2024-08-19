@@ -8,6 +8,8 @@ $string2 = "5";
 $int =  5;
 $float = 10.5;
 
+echo "NULL == NULL" . PHP_EOL;
+
 var_dump($null == $float);
 var_dump($string == $int);
 var_dump($string == $null);
